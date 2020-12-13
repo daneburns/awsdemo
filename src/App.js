@@ -4,11 +4,14 @@ import {jsx, css} from '@emotion/react'
 const style = css`
   color: hotpink;
 `
+const cyberPunk = css`
+  background-color: hotpink;
+`
 
 function App() {
   return (
     <div className="App" css={style}>
-      <header className="App-header">
+      <header className="App-header" css={cyberPunk}>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -27,3 +30,4 @@ function App() {
 }
 
 export default App;
+g
