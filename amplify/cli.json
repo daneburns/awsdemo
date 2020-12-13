@@ -1,7 +1,2 @@
 {
-    "features": {
-        "graphQLTransformer": {
-            "transformerVersion": 5
-        }
-    }
 }
