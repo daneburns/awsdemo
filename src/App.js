@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import {jsx, css} from '@emotion/react'
+const style = css`
+  color: hotpink;
+`
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" css={style}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
