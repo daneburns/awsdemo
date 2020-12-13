@@ -1,10 +1,17 @@
 {
-  "features": {
-    "graphqltransformer": {
-      "addmissingownerfields": true,
-      "validatetypenamereservedwords": true,
-      "useexperimentalpipelinedtransformer": false,
-      "enableiterativegsiupdates": false
+    "features": {
+        "graphQLTransformer": {
+            "transformerVersion": 5
+        },
+        "keyTransformer": {
+            "defaultQuery": true
+        },
+        "experimental": {
+            "feature1": true,
+            "feature2": false
+        },
+        "release": {
+            "lambdaLayers": true
+        }
     }
-  }
 }
