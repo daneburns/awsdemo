@@ -1,33 +1,18 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {jsx, css} from '@emotion/react'
-const style = css`
-  color: hotpink;
-`
-const cyberPunk = css`
-  background-color: hotpink;
-`
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 function App() {
   return (
-    <div className="App" css={style}>
-      <header className="App-header" css={cyberPunk}>
+    <div className="App">
+      <header>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>We now have Auth!</h1>
       </header>
+      <AmplifySignOut />
     </div>
   );
 }
 
-export default App;
-g
+export default withAuthenticator(App);
